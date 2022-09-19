@@ -28,7 +28,7 @@ export class Instrument {
   ];
 
   private readonly soundName: string;
-  readonly alias: AliasType;
+  alias: AliasType;
   buttonsContainer: HTMLElement;
 
   constructor({ alias, soundName }: IInstrumentProps) {

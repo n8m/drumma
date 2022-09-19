@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NoReact</title>
+<script defer src="main.js"></script></head>
+<body>
+<style>
+    span {
+        font-size: 32px;
+        display: inline-block;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        padding: 0;
+    }
+    #instruments button, span {
+        width: 30px;
+    }
+    .active{
+        background-color: #000;
+        color: #fff;
+    }
+    #controls{
+        margin-top: 20px;
+    }
+</style>
+    <div id="steps"></div>
+    <div id="instruments"></div>
+    <div id="controls">
+        <button id="button-slower">Slower</button>
+        <button id="button-faster">Faster</button>
+        <label>BPM: <input type="number" id="bpm-control"></label>
+    </div>
+    <div id="presets">
+        <button id="house">House</button>
+        <button id="breaks">Breaks/Hip-Hop</button>
+    </div>
+
+</body>
+</html>
