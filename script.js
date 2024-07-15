@@ -15,4 +15,13 @@
     },300);
   })
 
+  const interval = setInterval(() => {
+    if(window.Telegram){
+      const a = JSON.stringify(window.Telegram.WebApp)
+      document.querySelector("#telegra").innerHTML = a
+      clearInterval(interval)
+    }
+  }, 5000)
+
+
 })($)
