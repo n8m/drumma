@@ -17,7 +17,7 @@
 
   const interval = setInterval(() => {
     if(window.Telegram){
-      const a = JSON.stringify(window.Telegram.WebApp)
+      const a = JSON.stringify(window.Telegram.WebView)
       document.querySelector("#telegra").innerHTML = a
       clearInterval(interval)
     }
